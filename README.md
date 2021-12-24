@@ -23,7 +23,7 @@ Install MetaMask or other Web3-compatible browser setup, get a few Ether from a 
 * `setMintingPrice(uint256)` — Allows owner (see [0xcert ownable contract](https://github.com/0xcert/ethereum-utils/blob/master/contracts/ownership/Ownable.sol)) to set price
 * `setMintingCurrency(ERC20 contract)`  — Allows owner (see [0xcert ownable contract](https://github.com/0xcert/ethereum-utils/blob/master/contracts/ownership/Ownable.sol)) to set currency
 
-**ERC-20 token contract** — This is a standard ERC-721 contract implemented using the [OpenZeppelin template](https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts/token/ERC20) for ERC-20 including Minter extension also with additional functions:
+**ERC-20 token contract** — This is a standard ERC-20 contract implemented using the [OpenZeppelin template](https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts/token/ERC20) for ERC-20 including Minter extension also with additional functions:
 
 * `isSpender(address) view`, `addSpender(address)`, `renounceSpender()` — A new role for tracking who may spend these tokens, see [OpenZeppelin roles library](https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/contracts/access/Roles.sol)
 * `spend(account from, uint256 value)` — Allows an authorized spender to deduct money from a specific account's balance
